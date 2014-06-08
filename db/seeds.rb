@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Cat.find_or_create_by(breed: 'calico: ') do |cat|
+   cat.description = 'a multi colored cat!'
+ end

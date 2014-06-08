@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'cats/index'
+
+  get 'cats/new'
+
+  get 'cats/create'
+
+  devise_for :users
+
+  root 'cats#index'
+  resources :cats
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
